@@ -19,14 +19,14 @@ do {
     switch (menu) {
         case 1:
         flat.SetFlat();
-        map.put(flat.getID(), flat); /возможно потеря данных
+        map.put(flat.getID(), flat); /возможно потеря данных в классе Flat
         break;
         case 2:
             for(Map.Entry<Long, Flat> entry: map.entrySet()) {
                 // get key
                 Long key = entry.getKey();
                 // get value
-                 flat = entry.getValue(); /возможно потеря данных
+                 flat = entry.getValue(); /возможно потеря данных в классе Flat
                  flat.showflat();
             }
             break;
